@@ -1,0 +1,2 @@
+# Pura sample rules for App Review: blocks example.com so the effect is easy to see in Safari.
+example.com
