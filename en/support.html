@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pura Support</title><style>
+:root { --bg:#f5f7f3; --surface:#ffffff; --ink:#142d23; --muted:#56665f; --accent:#3f6655; --line:#e2e8e1; }
+@media (prefers-color-scheme: dark) { :root { --bg:#18221e; --surface:#212d27; --ink:#e7eee7; --muted:#abb9b1; --accent:#a4c7af; --line:#2f3d35; } }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--ink); font: 16px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", "Microsoft YaHei", sans-serif; -webkit-text-size-adjust:100%; }
+main { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
+nav { display:flex; flex-wrap:wrap; gap:8px 16px; align-items:center; font-size:14px; margin-bottom:8px; }
+nav a { color:var(--accent); text-decoration:none; } nav a[aria-current] { color:var(--ink); font-weight:600; }
+nav .spacer { flex:1; }
+article { background:var(--surface); border:1px solid var(--line); border-radius:18px; padding: 8px 22px 24px; }
+h1 { font-size: 26px; line-height:1.3; margin: 20px 0 4px; }
+h2 { font-size: 18px; margin: 28px 0 8px; }
+p, li { color: var(--muted); } strong { color: var(--ink); }
+.meta { font-size: 14px; margin-top: 0; }
+ol, ul { padding-left: 1.4em; } li { margin: 6px 0; } li p { margin: 6px 0; }
+a { color: var(--accent); }
+footer { color: var(--muted); font-size: 13px; text-align:center; margin-top: 24px; }
+.cards { display:grid; gap:12px; margin-top: 16px; }
+.cards a { display:block; background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:16px 18px; color:var(--ink); text-decoration:none; }
+.cards a span { display:block; color:var(--muted); font-size:14px; }
+</style></head>
+<body><main>
+<nav><a href="../index.html">Pura</a><a href="support.html" aria-current="page">Support</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a><span class="spacer"></span><a href="../support.html" hreflang="zh-Hans">中文</a></nav>
+<article>
+<h1>Pura Support</h1>
+<p>For help or feedback, email <a href="mailto:brycen_tang_lucky@163.com">brycen_tang_lucky@163.com</a>. We reply within 15 business days. Please include your iOS version, your Pura version (Settings → About Pura), and what you’re seeing.</p>
+<h2>FAQ</h2>
+<ol>
+<li><strong>Why do I still see ads?</strong> Pura only blocks domains that match rules you enable, and it ships with no rules. Apps with their own resolvers, ads served from the same domain as content, or domains your rules don’t cover can’t be separated by DNS. Use Checkup to see actual requests, then adjust your rules.
+</li>
+<li><strong>An app won’t open or loads slowly.</strong> Pause Pura from Home to see if it recovers. If it does, open Checkup → “An app not working?” to see recent blocks and allow the domains you need.
+</li>
+<li><strong>Why can’t I turn Pura on without rules?</strong> Pura only takes over your network when it has blocking rules. Import a rule pack or add domains on the Rules tab, and make sure they’re turned on.
+</li>
+<li><strong>What does Deep mode need?</strong> Pura Pro, plus a certificate generated on your device that you install and trust in iOS Settings, and the full domains you confirm in rule details. Some apps use certificate pinning and can’t be processed.
+</li>
+<li><strong>How do I remove the certificate completely?</strong> See the removal tutorial in Settings → Advanced → Deep mode: stop Pura, then remove the Pura profile in Settings → General → VPN &amp; Device Management. Deleting the app doesn’t remove the certificate.
+</li>
+<li><strong>How do I restore a purchase or get a refund?</strong> Tap “Restore purchases” in Settings → Pura Pro. Refunds are handled by Apple; request one from the Pro page or at reportaproblem.apple.com.
+</li>
+<li><strong>Does Pura collect my data?</strong> No. Pura has no accounts, analytics or advertising SDKs, and your rules and logs stay on your device. See the privacy policy.
+</li></ol>
+<h2>Documents</h2>
+<ul>
+<li>Privacy Policy: <a href="https://xineshen.github.io/pura-legal/en/privacy.html">https://xineshen.github.io/pura-legal/en/privacy.html</a></li>
+<li>Terms of Use: <a href="https://xineshen.github.io/pura-legal/en/terms.html">https://xineshen.github.io/pura-legal/en/terms.html</a></li>
+</ul>
+</article>
+<footer>© Pura · <a href="mailto:brycen_tang_lucky@163.com">brycen_tang_lucky@163.com</a></footer>
+</main></body></html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-Hans"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pura 支持</title><style>
+:root { --bg:#f5f7f3; --surface:#ffffff; --ink:#142d23; --muted:#56665f; --accent:#3f6655; --line:#e2e8e1; }
+@media (prefers-color-scheme: dark) { :root { --bg:#18221e; --surface:#212d27; --ink:#e7eee7; --muted:#abb9b1; --accent:#a4c7af; --line:#2f3d35; } }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--ink); font: 16px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", "Microsoft YaHei", sans-serif; -webkit-text-size-adjust:100%; }
+main { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
+nav { display:flex; flex-wrap:wrap; gap:8px 16px; align-items:center; font-size:14px; margin-bottom:8px; }
+nav a { color:var(--accent); text-decoration:none; } nav a[aria-current] { color:var(--ink); font-weight:600; }
+nav .spacer { flex:1; }
+article { background:var(--surface); border:1px solid var(--line); border-radius:18px; padding: 8px 22px 24px; }
+h1 { font-size: 26px; line-height:1.3; margin: 20px 0 4px; }
+h2 { font-size: 18px; margin: 28px 0 8px; }
+p, li { color: var(--muted); } strong { color: var(--ink); }
+.meta { font-size: 14px; margin-top: 0; }
+ol, ul { padding-left: 1.4em; } li { margin: 6px 0; } li p { margin: 6px 0; }
+a { color: var(--accent); }
+footer { color: var(--muted); font-size: 13px; text-align:center; margin-top: 24px; }
+.cards { display:grid; gap:12px; margin-top: 16px; }
+.cards a { display:block; background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:16px 18px; color:var(--ink); text-decoration:none; }
+.cards a span { display:block; color:var(--muted); font-size:14px; }
+</style></head>
+<body><main>
+<nav><a href="index.html">Pura</a><a href="support.html" aria-current="page">支持</a><a href="privacy.html">隐私政策</a><a href="terms.html">用户协议</a><span class="spacer"></span><a href="en/support.html" hreflang="en">English</a></nav>
+<article>
+<h1>Pura 支持</h1>
+<p>遇到问题或有建议，请发邮件到 <a href="mailto:brycen_tang_lucky@163.com">brycen_tang_lucky@163.com</a>，我们会在 15 个工作日内回复。来信时请附上 iOS 版本、Pura 版本（「设置 → 关于 Pura」），以及问题的具体表现。</p>
+<h2>常见问题</h2>
+<ol>
+<li><strong>开启后为什么仍然有广告？</strong> Pura 只按你启用的规则拦截域名，不附带任何规则。App 自建解析、广告与正常内容同域、或规则未覆盖的域名，都可能无法通过 DNS 区分。可以用「体检」查看实际请求，再调整规则。
+</li>
+<li><strong>某个 App 打不开或加载很慢怎么办？</strong> 先在主页暂停 Pura，确认是否恢复；若恢复，到「体检 → 某个 App 不正常？」查看最近被拦截的请求，确认后放行必要的域名。
+</li>
+<li><strong>为什么没有规则时无法开启？</strong> Pura 只在有拦截规则时才接管网络。请先在「规则」页导入规则包或手动添加域名，并确认已启用。
+</li>
+<li><strong>深度模式需要什么？</strong> 需要 Pura Pro，并在 iOS 设置中安装、信任本机生成的证书，再在规则详情中确认要处理的完整域名。部分 App 使用证书固定，可能无法处理。
+</li>
+<li><strong>如何彻底移除证书？</strong> 在「设置 → 高级 → 深度模式」中查看移除教程：先停止 Pura，再到「设置 → 通用 → VPN 与设备管理」移除 Pura 描述文件。删除 App 不会自动移除证书。
+</li>
+<li><strong>如何恢复购买或申请退款？</strong> 在「设置 → Pura Pro」中点「恢复购买」。退款由 Apple 处理，可在 Pro 页面发起，或访问 Apple 的 reportaproblem.apple.com 申请。
+</li>
+<li><strong>Pura 会收集我的数据吗？</strong> 不会。Pura 没有账号、统计或广告 SDK，规则与日志只保存在你的设备上。详见隐私政策。
+</li></ol>
+<h2>相关文件</h2>
+<ul>
+<li>隐私政策：<a href="https://xineshen.github.io/pura-legal/privacy.html">https://xineshen.github.io/pura-legal/privacy.html</a></li>
+<li>用户协议：<a href="https://xineshen.github.io/pura-legal/terms.html">https://xineshen.github.io/pura-legal/terms.html</a></li>
+</ul>
+</article>
+<footer>© Pura · <a href="mailto:brycen_tang_lucky@163.com">brycen_tang_lucky@163.com</a></footer>
+</main></body></html>
