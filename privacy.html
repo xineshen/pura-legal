@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-Hans"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pura 隐私政策</title><style>
+:root { --bg:#f5f7f3; --surface:#ffffff; --ink:#142d23; --muted:#56665f; --accent:#3f6655; --line:#e2e8e1; }
+@media (prefers-color-scheme: dark) { :root { --bg:#18221e; --surface:#212d27; --ink:#e7eee7; --muted:#abb9b1; --accent:#a4c7af; --line:#2f3d35; } }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--ink); font: 16px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", "Microsoft YaHei", sans-serif; -webkit-text-size-adjust:100%; }
+main { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
+nav { display:flex; flex-wrap:wrap; gap:8px 16px; align-items:center; font-size:14px; margin-bottom:8px; }
+nav a { color:var(--accent); text-decoration:none; } nav a[aria-current] { color:var(--ink); font-weight:600; }
+nav .spacer { flex:1; }
+article { background:var(--surface); border:1px solid var(--line); border-radius:18px; padding: 8px 22px 24px; }
+h1 { font-size: 26px; line-height:1.3; margin: 20px 0 4px; }
+h2 { font-size: 18px; margin: 28px 0 8px; }
+p, li { color: var(--muted); } strong { color: var(--ink); }
+.meta { font-size: 14px; margin-top: 0; }
+ol, ul { padding-left: 1.4em; } li { margin: 6px 0; } li p { margin: 6px 0; }
+a { color: var(--accent); }
+footer { color: var(--muted); font-size: 13px; text-align:center; margin-top: 24px; }
+.cards { display:grid; gap:12px; margin-top: 16px; }
+.cards a { display:block; background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:16px 18px; color:var(--ink); text-decoration:none; }
+.cards a span { display:block; color:var(--muted); font-size:14px; }
+</style></head>
+<body><main>
+<nav><a href="index.html">Pura</a><a href="terms.html">用户协议</a><a href="privacy.html" aria-current="page">隐私政策</a><span class="spacer"></span><a href="en/privacy.html" hreflang="en">English</a></nav>
+<article>
+<h1>Pura 隐私政策</h1>
+<p class="meta">版本：1.0　生效日期：2026年11月2日</p>
+<p>Pura（以下简称“本应用”）由 沈新娥（个人开发者）（以下简称“我们”）开发和提供。我们非常重视你的个人信息保护。本政策说明本应用如何处理与你相关的信息。</p>
+<p><strong>简要说明：本应用没有账号系统，不接入任何广告、统计或崩溃分析 SDK，我们也不运营接收你数据的服务器。你的规则、日志和设置都保存在你的设备上，我们无法访问。</strong> 本应用需要联网的情形仅限于：向你选择的 DNS 服务解析域名、获取你主动填写的规则链接，以及通过 Apple 完成购买。</p>
+<h2>一、我们处理哪些信息</h2>
+<p>以下信息均在你的设备上本地处理和保存，不会发送给我们。</p>
+<ol>
+<li><strong>DNS 请求与处理结果</strong>：开启本应用后，经过本地隧道的 DNS 请求（查询的域名、查询类型、时间、处理结果及命中的规则）用于按你的规则拦截或放行。请求日志在本机保留最近 24 小时，超过上限时删除最旧记录；当日统计仅保存汇总数据。
+</li>
+<li><strong>体检与网络诊断记录</strong>：在你主动开始体检或诊断后，本应用会在限定时间内记录经过本应用的 DNS 请求，以及（在你开启深度能力并信任证书时）HTTP(S) 请求与响应的内容。体检记录在本机保留 30 天后自动删除。记录中常见的凭据请求头（如 Cookie、Authorization）会被脱敏。
+</li>
+<li><strong>规则与设置</strong>：你导入或添加的规则、规则包信息、启用状态、你确认的域名与 App 归属、DNS 策略、语言等设置。
+</li>
+<li><strong>本机证书</strong>：深度模式使用的根证书及其私钥在你的设备上生成，私钥保存在设备钥匙串（Keychain）中，不会导出、备份或上传。
+</li>
+<li><strong>购买状态</strong>：本应用通过 Apple StoreKit 读取你的 Pura Pro 购买凭据以解锁功能。我们不会获得你的 Apple ID、支付卡或账单信息。
+</li></ol>
+<p>本应用不会收集你的姓名、手机号、通讯录、照片、精确位置、设备广告标识符（IDFA）等信息，也不会跨 App 或网站追踪你。</p>
+<h2>二、哪些情况下信息会离开你的设备</h2>
+<ol>
+<li><strong>DNS 解析</strong>：为了让网络正常工作，本应用需要把未被拦截的域名查询发送给上游 DNS 服务进行解析。上游服务会收到你查询的域名以及你的网络 IP 地址。本应用优先使用加密的 DNS over HTTPS，失败时可能回退到普通 DNS。根据你在“设置 → 上游 DNS”中的选择，可能使用以下服务：
+<ul>
+<li>阿里云公共 DNS（223.5.5.5）</li>
+<li>腾讯云 DNSPod 公共 DNS（1.12.12.12）</li>
+<li>Cloudflare DNS（1.1.1.1）</li>
+<li>Google Public DNS（8.8.8.8）</li>
+</ul>
+<p>这些服务由第三方独立运营，其处理行为适用各自的隐私政策。<strong>其中 Cloudflare 与 Google 的服务器可能位于中国境外。默认的“自动”策略包含境外服务；如你不希望查询发送至境外，可在设置中选择“国内优先”。</strong></p>
+</li>
+<li><strong>从链接导入规则</strong>：当你填写规则链接并点击获取时，本应用会访问该地址下载规则文件一次。该地址的服务器会收到你的 IP 地址及常规网络请求信息。
+</li>
+<li><strong>购买与退款</strong>：购买、恢复购买和退款申请由 Apple 处理，适用 Apple 的隐私政策。
+</li>
+<li><strong>你主动导出或分享</strong>：当你导出诊断文件、保存备份或使用系统分享功能时，文件会保存或发送到你选择的位置。之后的处理由你和接收方负责。
+</li></ol>
+<p>除上述情形外，本应用不会向任何第三方提供、出售或共享你的信息。</p>
+<h2>三、系统权限</h2>
+<ol>
+<li><strong>VPN 配置（网络扩展）</strong>：用于在本机处理 DNS 请求及你确认的流量。首次开启时由 iOS 请求你授权，你可以随时在系统设置中移除。本应用不会将你的全部网络流量发送到我们的服务器。
+</li>
+<li><strong>文件访问</strong>：仅在你通过系统文件选择器主动选择规则或备份文件时读取所选文件。
+</li>
+<li><strong>实时活动</strong>：用于在锁屏和灵动岛显示守护状态，可在系统设置中关闭。
+</li></ol>
+<h2>四、信息的保存与删除</h2>
+<ol>
+<li>上述信息仅保存在你的设备上，保存期限如下：请求日志 24 小时，体检记录 30 天，规则和设置在你删除前一直保存。
+</li>
+<li>你可以随时在“设置 → 本地数据”中清除日志与统计，在“设置 → 高级 → 卸载前清理”中移除本应用的网络配置与本机数据。删除本应用会删除其保存在设备上的数据，但不会删除你另存的备份文件或已安装的证书描述文件，请在系统设置中手动移除证书。
+</li>
+<li>由于我们不持有你的数据，我们无法为你恢复已删除的数据。
+</li></ol>
+<h2>五、你的权利</h2>
+<p>你可以直接在应用内查阅、复制（导出备份或诊断文件）、更正和删除你的规则、设置及本地记录，也可以随时撤回 VPN 等系统授权。由于我们不在服务器上保存你的个人信息，通常无需向我们提出申请即可行使上述权利。如有疑问，或认为本应用的处理方式侵害了你的权益，请通过本政策末尾的方式联系我们。</p>
+<h2>六、未成年人保护</h2>
+<p>本应用不面向未满 14 周岁的儿童。如果你是未满 14 周岁的未成年人，请在监护人同意和指导下使用本应用。我们不会主动收集未成年人的个人信息。</p>
+<h2>七、信息安全</h2>
+<p>本应用通过系统沙盒、钥匙串和加密 DNS 等技术措施保护本机数据。请妥善保管你的设备和锁屏密码，并谨慎分享导出的诊断文件和备份文件。</p>
+<h2>八、本政策的更新</h2>
+<p>我们可能因功能变化或法律要求更新本政策。更新后的政策会随应用版本发布；如有重大变化（例如新增数据离开设备的情形），我们会在应用内以显著方式提示，并在你再次确认后生效。</p>
+<h2>九、联系我们</h2>
+<p>如对本政策或你的个人信息有任何疑问、意见或投诉，请通过 <a href="mailto:brycen_tang_lucky@163.com">brycen_tang_lucky@163.com</a> 联系我们。我们会在 15 个工作日内回复。</p>
+<p>个人信息处理者：沈新娥（个人开发者）</p>
+</article>
+<footer>© Pura · <a href="mailto:brycen_tang_lucky@163.com">brycen_tang_lucky@163.com</a></footer>
+</main></body></html>

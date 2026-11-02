@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pura Terms of Use</title><style>
+:root { --bg:#f5f7f3; --surface:#ffffff; --ink:#142d23; --muted:#56665f; --accent:#3f6655; --line:#e2e8e1; }
+@media (prefers-color-scheme: dark) { :root { --bg:#18221e; --surface:#212d27; --ink:#e7eee7; --muted:#abb9b1; --accent:#a4c7af; --line:#2f3d35; } }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--ink); font: 16px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", "Microsoft YaHei", sans-serif; -webkit-text-size-adjust:100%; }
+main { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
+nav { display:flex; flex-wrap:wrap; gap:8px 16px; align-items:center; font-size:14px; margin-bottom:8px; }
+nav a { color:var(--accent); text-decoration:none; } nav a[aria-current] { color:var(--ink); font-weight:600; }
+nav .spacer { flex:1; }
+article { background:var(--surface); border:1px solid var(--line); border-radius:18px; padding: 8px 22px 24px; }
+h1 { font-size: 26px; line-height:1.3; margin: 20px 0 4px; }
+h2 { font-size: 18px; margin: 28px 0 8px; }
+p, li { color: var(--muted); } strong { color: var(--ink); }
+.meta { font-size: 14px; margin-top: 0; }
+ol, ul { padding-left: 1.4em; } li { margin: 6px 0; } li p { margin: 6px 0; }
+a { color: var(--accent); }
+footer { color: var(--muted); font-size: 13px; text-align:center; margin-top: 24px; }
+.cards { display:grid; gap:12px; margin-top: 16px; }
+.cards a { display:block; background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:16px 18px; color:var(--ink); text-decoration:none; }
+.cards a span { display:block; color:var(--muted); font-size:14px; }
+</style></head>
+<body><main>
+<nav><a href="../index.html">Pura</a><a href="terms.html" aria-current="page">Terms of Use</a><a href="privacy.html">Privacy Policy</a><span class="spacer"></span><a href="../terms.html" hreflang="zh-Hans">中文</a></nav>
+<article>
+<h1>Pura Terms of Use</h1>
+<p class="meta">Version: 1.0  Effective: November 2, 2026</p>
+<p>Welcome to Pura (the “App”). The App is developed and provided by Shen Xin’e (沈新娥), individual developer (“we” or “us”). Please read these Terms carefully before using the App, especially the provisions in <strong>bold</strong> that exclude or limit liability, describe your responsibilities, and govern disputes. By tapping “I understand, get started” or otherwise using the App, you confirm that you have read, understood and agree to these Terms and the Pura Privacy Policy. If you do not agree, stop using and delete the App.</p>
+<p>If you are under 18, please read these Terms with a parent or guardian and use the App only with their consent.</p>
+<h2>1. What the App is</h2>
+<ol>
+<li>The App is a network filtering and diagnostic tool that runs locally on your device. Using the local VPN (Network Extension) capability provided by iOS, it handles DNS requests on your device according to the rules you enable. If you separately turn it on and confirm it, the App can also relay and process HTTPS traffic for domains you specify (“Deep mode”), and block IP addresses you confirm.
+</li>
+<li>The App does not provide, include or recommend any filtering rules. All rules are imported, written or added by you. We do not operate a rule subscription service and do not review the rules you use.
+</li>
+<li>The App does not operate VPN servers and does not route your network traffic to our servers. How the App handles data is described in the Pura Privacy Policy.
+</li></ol>
+<h2>2. License</h2>
+<ol>
+<li>Subject to these Terms, we grant you a personal, non-transferable, non-sublicensable, non-exclusive, limited license to install and use the App on Apple devices you own or control, in accordance with the App Store usage rules.
+</li>
+<li>We own the intellectual property in the App and its interface, graphics, mascot, text and code, except third-party open-source components. Those components are licensed under their own licenses; full texts are available in Settings → About Pura → Third-party licenses.
+</li>
+<li>Except as permitted by law or by an applicable open-source license, you may not rent, sell, reverse engineer, decompile or otherwise attempt to derive the source code of the App, or remove or alter any notices in it.
+</li></ol>
+<h2>3. Your rules, your responsibility</h2>
+<ol>
+<li><strong>You decide which rules to import, add and enable, and how to use the App, and you are solely responsible for those choices.</strong> You must ensure that the rules you use come from lawful sources, that you have the right to use them, and that their content and your use of them do not violate applicable laws, third-party terms of service or your agreements with others.
+</li>
+<li>You must not use the App to:
+<ul>
+<li>violate any law or endanger network or data security;</li>
+<li>access, interfere with or damage another person’s network, device, system or data without authorization;</li>
+<li>use the App on another person’s device, or on their network traffic, without their explicit consent;</li>
+<li>circumvent access controls or copyright protection measures lawfully put in place by others, or infringe the intellectual property, privacy or other rights of others;</li>
+<li>do anything else we reasonably believe to be unlawful or improper.</li>
+</ul>
+</li>
+<li><strong>Rules may cause some apps, websites or services to malfunction, fail to load, fail to sign in or take payments, or may breach those services’ terms and lead to account restrictions.</strong> You bear these consequences. You can pause or turn off Pura from Home at any time and use Checkup to troubleshoot.
+</li>
+<li>The App’s built-in protected list always allows certain system, payment and essential service domains first to reduce the risk of mistaken blocking, but this does not guarantee that every important service is unaffected.
+</li></ol>
+<h2>4. Deep mode and the local certificate</h2>
+<ol>
+<li>Deep mode requires you to generate a local certificate and manually install and trust it in iOS Settings. The private key is generated and stored only on your device and is never uploaded to us.
+</li>
+<li><strong>Installing and trusting a root certificate allows your device to decrypt HTTPS traffic within the scope you confirm.</strong> Only turn on deep processing for domains you understand and trust, and take care with banking, payment, health, government and other sensitive apps. Some apps use certificate pinning or other protections and may refuse the relay or behave abnormally.
+</li>
+<li>Turning off rules, pausing or deleting the App does not remove the certificate profile installed in iOS. When you no longer need it, remove it manually in Settings by following the in-app removal tutorial.
+</li></ol>
+<h2>5. Network diagnosis and exports</h2>
+<ol>
+<li>When you start a Checkup or network diagnosis, the App records, for a limited time, DNS requests that pass through it and—if you have turned this on and trust the certificate—full HTTP(S) requests and responses. Filtering rules are off during diagnosis.
+</li>
+<li>Diagnostic records may include requests from other apps and the system and may contain account details or other sensitive personal information. We redact common credential headers, but cannot guarantee that all sensitive information is removed. <strong>You are responsible for exporting or sharing diagnostic files; please review them before sharing.</strong>
+</li></ol>
+<h2>6. Pura Pro</h2>
+<ol>
+<li>Pura Pro is a one-time purchase of tool features through the Apple App Store, at the price shown there. It only unlocks tool features, includes no rules, and does not guarantee filtering results for any app.
+</li>
+<li>Payment, charges, restoring purchases, Family Sharing and refunds are handled by Apple under its rules. We cannot issue refunds directly; you can request one from Apple through the in-app link or your Apple purchase history.
+</li>
+<li>We may change features in future versions. For Pura Pro you have purchased, we will make reasonable efforts to keep its core tool features available.
+</li></ol>
+<h2>7. Disclaimers</h2>
+<ol>
+<li><strong>The App is provided “as is” and “as available”. To the maximum extent permitted by law, we make no express or implied warranties, including merchantability, fitness for a particular purpose, accuracy or completeness of filtering or diagnostic results, or uninterrupted or error-free operation.</strong>
+</li>
+<li>The App depends on iOS capabilities, your network and third-party DNS services. We are not responsible if the App does not work properly because of system limitations or updates, network failures, changes to third-party services, or force majeure.
+</li>
+<li><strong>To the maximum extent permitted by law, we are not liable for any indirect, incidental, special or consequential loss (including loss of data, account restrictions, business interruption or lost profits) arising from your use of or inability to use the App.</strong> In any case, our total liability under these Terms is limited to the amount you actually paid for the App.
+</li>
+<li>Nothing in this section excludes or limits liability that cannot be excluded or limited under applicable law, such as liability for loss caused by our intentional misconduct or gross negligence.
+</li></ol>
+<h2>8. Changes and termination</h2>
+<ol>
+<li>We may update these Terms because of legal changes or product changes. Updated Terms are released with new versions of the App. For changes that materially affect your rights or obligations, we will notify you prominently in the App, and they take effect once you confirm again. If you do not agree, stop using the App.
+</li>
+<li>You may stop using and delete the App at any time. If you seriously breach these Terms, we may, to the extent permitted by law, stop providing you with further updates and support.
+</li></ol>
+<h2>9. Governing law and disputes</h2>
+<ol>
+<li>These Terms are governed by the laws of the People’s Republic of China (for this purpose excluding the laws of the Hong Kong SAR, the Macao SAR and Taiwan). Where mandatory laws of your place of residence provide otherwise, those laws apply.
+</li>
+<li>Any dispute arising from these Terms shall first be resolved through friendly negotiation. If that fails, either party may bring a lawsuit before a competent people’s court in accordance with the law.
+</li></ol>
+<h2>10. Contact</h2>
+<p>If you have any questions, comments or complaints about these Terms, contact us at <a href="mailto:brycen_tang_lucky@163.com">brycen_tang_lucky@163.com</a>. We will reply within 15 business days.</p>
+</article>
+<footer>© Pura · <a href="mailto:brycen_tang_lucky@163.com">brycen_tang_lucky@163.com</a></footer>
+</main></body></html>

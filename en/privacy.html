@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pura Privacy Policy</title><style>
+:root { --bg:#f5f7f3; --surface:#ffffff; --ink:#142d23; --muted:#56665f; --accent:#3f6655; --line:#e2e8e1; }
+@media (prefers-color-scheme: dark) { :root { --bg:#18221e; --surface:#212d27; --ink:#e7eee7; --muted:#abb9b1; --accent:#a4c7af; --line:#2f3d35; } }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--ink); font: 16px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", "Microsoft YaHei", sans-serif; -webkit-text-size-adjust:100%; }
+main { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
+nav { display:flex; flex-wrap:wrap; gap:8px 16px; align-items:center; font-size:14px; margin-bottom:8px; }
+nav a { color:var(--accent); text-decoration:none; } nav a[aria-current] { color:var(--ink); font-weight:600; }
+nav .spacer { flex:1; }
+article { background:var(--surface); border:1px solid var(--line); border-radius:18px; padding: 8px 22px 24px; }
+h1 { font-size: 26px; line-height:1.3; margin: 20px 0 4px; }
+h2 { font-size: 18px; margin: 28px 0 8px; }
+p, li { color: var(--muted); } strong { color: var(--ink); }
+.meta { font-size: 14px; margin-top: 0; }
+ol, ul { padding-left: 1.4em; } li { margin: 6px 0; } li p { margin: 6px 0; }
+a { color: var(--accent); }
+footer { color: var(--muted); font-size: 13px; text-align:center; margin-top: 24px; }
+.cards { display:grid; gap:12px; margin-top: 16px; }
+.cards a { display:block; background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:16px 18px; color:var(--ink); text-decoration:none; }
+.cards a span { display:block; color:var(--muted); font-size:14px; }
+</style></head>
+<body><main>
+<nav><a href="../index.html">Pura</a><a href="terms.html">Terms of Use</a><a href="privacy.html" aria-current="page">Privacy Policy</a><span class="spacer"></span><a href="../privacy.html" hreflang="zh-Hans">中文</a></nav>
+<article>
+<h1>Pura Privacy Policy</h1>
+<p class="meta">Version: 1.0  Effective: November 2, 2026</p>
+<p>Pura (the “App”) is developed and provided by Shen Xin’e (沈新娥), individual developer (“we” or “us”). We take the protection of your personal information seriously. This policy explains how the App handles information related to you.</p>
+<p><strong>In short: the App has no accounts, includes no advertising, analytics or crash-reporting SDKs, and we do not run servers that receive your data. Your rules, logs and settings stay on your device, and we cannot access them.</strong> The App only uses the network to resolve domains through the DNS service you choose, to fetch rule links you enter, and to complete purchases through Apple.</p>
+<h2>1. Information the App handles</h2>
+<p>All of the following is processed and stored locally on your device and is never sent to us.</p>
+<ol>
+<li><strong>DNS requests and results</strong>: while the App is on, DNS requests passing through the local tunnel (queried domain, query type, time, result and matched rule) are used to block or allow them according to your rules. The request log keeps the last 24 hours on your device, deleting the oldest entries when full; daily statistics keep totals only.
+</li>
+<li><strong>Checkup and network diagnosis records</strong>: when you start a Checkup or diagnosis, the App records, for a limited time, DNS requests passing through it and—if you have turned on deep features and trust the certificate—the content of HTTP(S) requests and responses. Checkup records are deleted automatically after 30 days. Common credential headers (such as Cookie and Authorization) are redacted.
+</li>
+<li><strong>Rules and settings</strong>: rules you import or add, rule pack details, on/off states, domain-to-app assignments you confirm, DNS strategy, language and other settings.
+</li>
+<li><strong>Local certificate</strong>: the root certificate and private key used by Deep mode are generated on your device. The private key is stored in the device Keychain and is never exported, backed up or uploaded.
+</li>
+<li><strong>Purchase status</strong>: the App reads your Pura Pro purchase through Apple StoreKit to unlock features. We never receive your Apple ID, payment card or billing information.
+</li></ol>
+<p>The App does not collect your name, phone number, contacts, photos, precise location or advertising identifier (IDFA), and does not track you across apps or websites.</p>
+<h2>2. When information leaves your device</h2>
+<ol>
+<li><strong>DNS resolution</strong>: to keep your network working, the App sends domain lookups that are not blocked to an upstream DNS service. That service receives the queried domain and your network IP address. The App prefers encrypted DNS over HTTPS and may fall back to plain DNS on failure. Depending on your choice in Settings → Upstream DNS, the following services may be used:
+<ul>
+<li>Alibaba Cloud Public DNS (223.5.5.5)</li>
+<li>Tencent Cloud DNSPod Public DNS (1.12.12.12)</li>
+<li>Cloudflare DNS (1.1.1.1)</li>
+<li>Google Public DNS (8.8.8.8)</li>
+</ul>
+<p>These services are operated independently by third parties under their own privacy policies. <strong>Cloudflare and Google servers may be located outside mainland China. The default “Automatic” strategy includes these services; choose “Mainland China first” in Settings if you do not want lookups sent abroad.</strong></p>
+</li>
+<li><strong>Importing rules from a link</strong>: when you enter a rule link and fetch it, the App downloads the file from that address once. That server receives your IP address and ordinary request information.
+</li>
+<li><strong>Purchases and refunds</strong>: purchases, restoring purchases and refund requests are handled by Apple under Apple’s privacy policy.
+</li>
+<li><strong>Exports and sharing you start</strong>: when you export a diagnostic file, save a backup or use the system share sheet, the file goes to the place you choose. You and the recipient are responsible for it from then on.
+</li></ol>
+<p>Apart from the above, the App does not provide, sell or share your information with any third party.</p>
+<h2>3. System permissions</h2>
+<ol>
+<li><strong>VPN configuration (Network Extension)</strong>: used to handle DNS requests and traffic you confirm on your device. iOS asks for your permission the first time, and you can remove it in Settings at any time. The App does not send your network traffic to our servers.
+</li>
+<li><strong>Files</strong>: the App reads only files you choose through the system file picker, such as rules or backups.
+</li>
+<li><strong>Live Activities</strong>: used to show protection status on the Lock Screen and in the Dynamic Island. You can turn them off in Settings.
+</li></ol>
+<h2>4. Retention and deletion</h2>
+<ol>
+<li>This information is stored only on your device: the request log for 24 hours, Checkup records for 30 days, and rules and settings until you delete them.
+</li>
+<li>You can clear logs and statistics anytime in Settings → Local data, and remove the App’s network configuration and local data in Settings → Advanced → Clean up before uninstalling. Deleting the App deletes the data it stores on your device, but not backups you saved elsewhere or certificate profiles you installed; remove the certificate manually in Settings.
+</li>
+<li>Because we do not hold your data, we cannot recover data you delete.
+</li></ol>
+<h2>5. Your rights</h2>
+<p>You can view, copy (by exporting a backup or diagnostic file), correct and delete your rules, settings and local records directly in the App, and you can withdraw system permissions such as VPN at any time. Because we do not store your personal information on servers, you normally do not need to contact us to exercise these rights. If you have questions, or believe the App’s handling infringes your rights, contact us using the details below.</p>
+<h2>6. Children</h2>
+<p>The App is not directed at children under 14. If you are under 14, use the App only with the consent and guidance of a parent or guardian. We do not knowingly collect personal information from minors.</p>
+<h2>7. Security</h2>
+<p>The App protects local data with the system sandbox, the Keychain and encrypted DNS. Please keep your device and passcode secure, and take care when sharing exported diagnostic or backup files.</p>
+<h2>8. Changes to this policy</h2>
+<p>We may update this policy because of feature changes or legal requirements. Updates are released with new versions of the App. For material changes (for example, a new case in which data leaves your device), we will notify you prominently in the App, and they take effect once you confirm again.</p>
+<h2>9. Contact</h2>
+<p>If you have any questions, comments or complaints about this policy or your personal information, contact us at <a href="mailto:brycen_tang_lucky@163.com">brycen_tang_lucky@163.com</a>. We will reply within 15 business days.</p>
+<p>Personal information handler: Shen Xin’e (沈新娥), individual developer</p>
+</article>
+<footer>© Pura · <a href="mailto:brycen_tang_lucky@163.com">brycen_tang_lucky@163.com</a></footer>
+</main></body></html>
